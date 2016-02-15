@@ -1,7 +1,16 @@
 zkValidation
 ============
 
-AngularJS validation bundle (services + directives) used by Zooku.
+AngularJS validation bundle (services + directives) used by [Zooku](http://my.zooku.ro).  
+
+The validation rules are fetched from the back-end and re-used on the front-end
+in order to keep the rules in sync.  
+Rules allow chaining, so that a field like Email can take a validation rule like:
+    
+    required | email | is_available_callback
+
+The rules follow the format described in `examples/rules.json`  
+This could just as well be a dynamic end-point on your back-end.
 
 
 API
@@ -15,7 +24,8 @@ Master directive fetches validation rules and sets validate-input on child input
 
 #### `validation-run-after` (on form element)
 
-Run validation rules only after the data request.  
+Some forms might already contain data from a backend.  
+Run validation rules only after the data request was fulfilled.  
 
 #### `validation-submit` (on submit button)
 
@@ -26,7 +36,7 @@ The ng-disabled value must contain the formObject.$submitInProgress variable for
 #### `validate` (on input field)
 
 Validate input field.  
-The rule for the field is run depending on the `name` attribute of this field.  
+The `name` attribute of the field must match its rule name.
 
 Example
 =======
