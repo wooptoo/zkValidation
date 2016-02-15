@@ -9,11 +9,24 @@ API
 
 The available directives are:
 
-* validation-rule (on form element)
-* validation-run-after (on form element)
-* validate (on input)
-* validation-submit (on submit)
+#### `validation-rule` (on form element)
 
+Master directive fetches validation rules and sets validate-input on child inputs.
+
+#### `validation-run-after` (on form element)
+
+Run validation rules only after the data request.  
+
+#### `validation-submit` (on submit button)
+
+The submit button is disabled after clicking submit and waits until the request promise is fulfilled.  
+The attribute value of this directive must be a Promise ($http or $resource object) in the current scope.  
+The ng-disabled value must contain the formObject.$submitInProgress variable for the disable functionality to work properly.  
+
+#### `validate` (on input field)
+
+Validate input field.  
+The rule for the field is run depending on the `name` attribute of this field.  
 
 Example
 =======
