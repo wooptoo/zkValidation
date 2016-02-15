@@ -9,10 +9,10 @@ API
 
 The available directives are:
 
-    * validation-rule (on form element)
-    * validation-run-after (on form element)
-    * validate (on input)
-    * validation-submit (on submit)
+* validation-rule (on form element)
+* validation-run-after (on form element)
+* validate (on input)
+* validation-submit (on submit)
 
 
 Example
