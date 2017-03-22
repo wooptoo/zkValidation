@@ -12,6 +12,9 @@ Rules allow chaining, so that a field like Email can take a validation rule like
 The rules follow the format described in `examples/rules.json`  
 This could just as well be a dynamic end-point on your back-end.
 
+[Demo](http://demo.wooptoo.com/zkValidation/examples/)
+======
+
 
 API
 ===
