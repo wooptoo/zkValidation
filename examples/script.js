@@ -26,16 +26,16 @@ app.controller('example', function($scope, $http, $rootScope) {
     
     $rootScope.lang = {
         "validation": {
-            "required": "Field is required",
+            "required": "Required Field",
             "valid_email": "Email must be valid",
-            "min_length": "Minimum length %s characters",
-            "matches": "The field must be identical to %s",
-            "numeric": "The field must contain only numbers",
+            "min_length": "Minimum %s characters",
+            "matches": "Must be identical to %s",
+            "numeric": "Must contain only numbers",
             "callback_domain_is_valid": "Domanin must be valid",
-            "callback_url_is_valid": "The site must be valid",
-            "exact_length": "Length %s characters",
+            "callback_url_is_valid": "The link must be valid",
+            "exact_length": "Exactly %s characters",
             "alpha_dash": "Only letters, numbers and dashes",
-            
+
             "is_natural": "Trebuie sa fie un numar pozitiv",
             "greater_than": "Valoarea trebuie sa fie mai mare decat %s",
             "less_than": "Valoarea trebuie sa fie mai mica decat %s",
@@ -50,7 +50,8 @@ app.controller('example', function($scope, $http, $rootScope) {
             "callback_alpha_dash_dot" : "Poate sa contina numai litere, `-` si `.`",
             "callback_alpha_space" : "Poate contine doar listere si spatiu",
             "callback_alpha_numeric_space" : "Poate contine doar listere cifre si spatiu"
-        }
+        },
+        "password": "Password",  
     };
     
 });

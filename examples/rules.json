@@ -8,6 +8,18 @@
                 "msg": "valid_email"
             }
         ],
+        "password": [
+            {
+                "msg": "min_length",
+                "param": 8
+            }
+        ],
+        "repeat_password": [
+            {
+                "msg": "matches",
+                "param": "password"
+            }
+        ],
         "name": [
             {
                 "msg": "required"
